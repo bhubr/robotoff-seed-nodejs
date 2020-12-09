@@ -23,4 +23,12 @@ VALUES(
 * Copy `.env.sample` as `.env`
 * Your local Robotoff instance must be up and running (See [Robotoff's README](https://github.com/openfoodfacts/robotoff#installation) for Docker Compose instructions)
 
-**TO BE CONTINUED**
+## Get some data
+
+Get some data from production Robotoff, save the raw JSON responses under `data`.
+
+You can do that with your browser's network tab open, select an AJAX request to Robotoff and right-click => copy response, then save that response as a `.json` file in `data`.
+
+## Run!
+
+`node index` will read all data files in `data` dir and inject them into PostgreSQL db.
